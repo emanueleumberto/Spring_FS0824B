@@ -10,13 +10,15 @@ public class ConfigurationBean {
     @Bean
     @Scope("singleton")
     public UserConfiguration user() {
-        return new UserConfiguration("Mario", "Rossi");
+        //return new UserConfiguration("Mario", "Rossi");
+        return new UserConfiguration();
     }
 
     @Bean
     @Scope("prototype")
     public UserConfiguration userParam(String name, String lastname) {
-        return new UserConfiguration(name, lastname);
+        //return new UserConfiguration(name, lastname);
+        return new UserConfiguration();
     }
 
 
